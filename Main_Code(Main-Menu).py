@@ -4,9 +4,7 @@ from PythagorasSolver import PSoption2
 from PythagorasSolver import PSoption3
 #imports the PythagorasSolver into it
 from RockPaperScissors import RockPaperScissors
-from LoginServer import Login
-from LoginServer import login2
-from LoginServer import Create
+from BattleOfTheBands import BattleOfTheBands
 
 #Main Menu
 print("(------------Main Menu------------)")
@@ -57,7 +55,8 @@ elif choice == 3:
 		print("Invalid")
 elif choice == 4:
 	print("4. Battle of the Bands")
+	BattleOfTheBands()
 elif choice == 5:
 	print("Please enter a number.")
 else:
-    print("(------------Invalid------------)")
+	print("(------------Invalid------------)")

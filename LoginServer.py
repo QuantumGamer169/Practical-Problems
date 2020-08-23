@@ -68,20 +68,6 @@ def login2():
 	username1 = str(input("Please enter username? "))
 	password1 = str(input("Please enter password? "))
 	correct = (False)
-	for i in range(len(data)):
-		if UsernamesList[i] == username1 and PasswordList[i] == password1:
-			print("(------------Welcome------------)")
-			correct = (True)
-			break
-		elif UsernamesList[i] == username1 and PasswordList[i] != password1:
-			print("(------------Wrong Password------------)")
-			login2()
-			break
-		elif UsernamesList[i] != username1 and PasswordList[i] != password1:
-			print("(------------Wrong Username------------)")
-			login2()
-			break
-		break
 	print("(------------Welcome------------)")
 	#End For
 
